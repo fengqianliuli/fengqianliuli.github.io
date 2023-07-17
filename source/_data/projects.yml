@@ -1,13 +1,13 @@
 Notes:
   name: 便筏
   title: 便筏
-  description: 一个隐藏项目：笔记
+  description: 一个隐藏项目：便筏
   index: false
   # sidebar: [toc]
   # cover: [logo, description]
   tags: 知识库
   sections:
-    '日常问题解决方案': [100, 199]
-    '移动端开发笔记': [200, 299]
-    '前端学习笔记': [300, 399]
-    '在线工具': [400, 499]
+    '分类A': [100, 199]
+    '分类B': [200, 299]
+    '分类C': [300, 399]
+    '分类D': [400, 499]

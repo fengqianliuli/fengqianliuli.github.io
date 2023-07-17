@@ -1,4 +1,6 @@
 ---
+layout: wiki
+wiki: Notes
 seo_title: 便筏
 menu_id: notes
 
