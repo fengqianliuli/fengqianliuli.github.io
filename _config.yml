@@ -108,5 +108,5 @@ theme: stellar
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repository: git@github.com:fengqianliuli/fengqianliuli.github.io.git
+  repository: https://github.com/fengqianliuli/fengqianliuli.github.io.git
   branch: gh-pages
