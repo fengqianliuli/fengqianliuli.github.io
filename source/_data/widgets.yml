@@ -49,7 +49,7 @@ toc:
 # github user info
 ghuser:
   layout: ghuser
-  username: github # your github login username
+  username: fengqianliuli # your github login username
   avatar: true # show avatar or not
   menu: true # show menu or not
 
