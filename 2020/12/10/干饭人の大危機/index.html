@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>干饭人の大危機 - 知雨时节</title>
+
+  
+    <meta name="description" content="1、危機起因今天是12月10号，距离疫情发生不知道过了多少天反正总之就是很多天都它喵快一年了的一天。 公司自从复工后依然在执行午饭需要提前预定的制度，虽说是为了大家的健康着想，但是每天都要等到晚上十二点然后打开app订餐，对于我这种一天至少需要睡八-九小时的生物来说简直是一种折磨。 因此我决定开始那个计划！（主要是原来计划过然后忘了执行了···）。 2、大致思路 使用抓包工具对手机app进行抓包，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="干饭人の大危機">
+<meta property="og:url" content="https://fengqianliuli.github.io/2020/12/10/%E5%B9%B2%E9%A5%AD%E4%BA%BA%E3%81%AE%E5%A4%A7%E5%8D%B1%E6%A9%9F/index.html">
+<meta property="og:site_name" content="知雨时节">
+<meta property="og:description" content="1、危機起因今天是12月10号，距离疫情发生不知道过了多少天反正总之就是很多天都它喵快一年了的一天。 公司自从复工后依然在执行午饭需要提前预定的制度，虽说是为了大家的健康着想，但是每天都要等到晚上十二点然后打开app订餐，对于我这种一天至少需要睡八-九小时的生物来说简直是一种折磨。 因此我决定开始那个计划！（主要是原来计划过然后忘了执行了···）。 2、大致思路 使用抓包工具对手机app进行抓包，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251720592.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251720983.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251723982.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251726058.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251727577.PNG">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251728376.PNG">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251728401.PNG">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251729800.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251729810.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251729686.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251730727.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251730509.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251730558.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251731021.png">
+<meta property="article:published_time" content="2020-12-10T09:04:00.000Z">
+<meta property="article:modified_time" content="2023-10-25T10:08:40.861Z">
+<meta property="article:author" content="知雨">
+<meta property="article:tag" content="抓包">
+<meta property="article:tag" content="请求伪装">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251720592.png">
+  
+  
+  
+  <meta name="keywords" content="抓包,请求伪装">
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+    <link rel="shortcut icon" href="/assets/logo/favicon.png">
+  
+
+  
+
+  
+
+
+  
+</head>
+
+<body>
+  
+
+<div class="l_cover post"><div class="cover"><div class="lazy img bg" data-bg="https://source.unsplash.com/2000x400/?请求伪装,抓包"></div></div></div>
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+  
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/assets/logo/DSC00537.JPG" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">知雨时节</div><div class="sub normal cap">知雨ʼblog</div><div class="sub hover cap" style="opacity:0"> All Will Be Clear</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/notes/">便筏</a><a class="nav-item" href="/timeline/">更多</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">干饭人の大危機</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%8D%B1%E6%A9%9F%E8%B5%B7%E5%9B%A0"><span class="toc-text">1、危機起因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%A4%A7%E8%87%B4%E6%80%9D%E8%B7%AF"><span class="toc-text">2、大致思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E8%A8%88%E7%95%AB%E9%96%8B%E5%A7%8B%EF%BC%81"><span class="toc-text">3、計畫開始！</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0-%E6%8A%93%E5%8C%85%EF%BC%81"><span class="toc-text">① 抓包！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1-%E7%BC%96%E5%86%99%E7%A8%8B%E5%BA%8F"><span class="toc-text">② 编写程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C"><span class="toc-text">③ 服务器运行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E4%BD%9C%E6%88%B0%E7%B5%90%E6%9D%9F"><span class="toc-text">4、作戰結束</span></a></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/fengqianliuli" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/08a41b181ce68.svg"/></a><a class="social" href="/about/#comments" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/942ebbf1a4b91.svg"/></a></div></footer>
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/SpringBoot/">SpringBoot</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-12-10T09:04:00.000Z">2020-12-10</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>干饭人の大危機</span></h1>
+<h2 id="1、危機起因"><a href="#1、危機起因" class="headerlink" title="1、危機起因"></a>1、危機起因</h2><p>今天是12月10号，距离疫情发生不知道过了多少天反正总之就是很多天都它喵快一年了的一天。</p>
+<p>公司自从复工后依然在执行午饭需要提前预定的制度，虽说是为了大家的健康着想，但是每天都要等到晚上十二点然后打开app订餐，对于我这种一天至少需要睡八-九小时的生物来说简直是一种折磨。</p>
+<p>因此我决定开始<code>那个计划！</code>（主要是原来计划过然后忘了执行了···）。</p>
+<h2 id="2、大致思路"><a href="#2、大致思路" class="headerlink" title="2、大致思路"></a>2、大致思路</h2><ul>
+<li>使用抓包工具对手机app进行抓包，获取订餐对应的API接口</li>
+<li>编写一个定时任务进行伪造订餐请求，并在指定时间发送</li>
+<li>将项目打包扔到服务器上运行</li>
+</ul>
+<h2 id="3、計畫開始！"><a href="#3、計畫開始！" class="headerlink" title="3、計畫開始！"></a>3、計畫開始！</h2><h3 id="①-抓包！"><a href="#①-抓包！" class="headerlink" title="① 抓包！"></a>① 抓包！</h3><p>我使用的抓包工具就是比较知名的<code>Fiddler</code></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251720592.png"/></div></div>
+
+
+<p>直接搜索引擎搜就完事了，或者直接点击这里的<a target="_blank" rel="noopener" href="https://www.telerik.com/fiddler">官网链接</a></p>
+<p>然后下载安装，安装一直下一步就可以</p>
+<p>Fiddler主要是一个抓Web的工具，但是也可以抓外部设备的访问请求，只不过需要<code>设置代理</code></p>
+<ol>
+<li><p>关闭电脑的防火墙</p>
+<p>Mac的比较简单：打开<code>系统便好设置</code> –&gt;<code>安全与隐私</code>–&gt;<code>防火墙</code></p>
+<p>然后关闭就行了</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251720983.png"/></div></div>
+
+<p>Windows的我也忘了在哪了，反正找不到就去搜一下</p>
+</li>
+<li><p>打开<code>Fiddler</code>找到右上角设置</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251723982.png"/></div></div>
+
+<p>依次是 允许权限、捕获HTTPS请求、忽略请求错误</p>
+<p>然后就是设置代理</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251726058.png"/></div></div>
+
+<p>记住这个端口号，默认是<code>8866</code></p>
+<p>选项依次是：启动时开启代理、允许外部设备访问</p>
+<p>设置完成之后点<code>save</code>然后<code>重启Fiddler</code>，记得重启，不然设置不会生效</p>
+</li>
+<li><p>确保手机和电脑在同一个<code>局域网</code>下</p>
+<p>然后配置手机的代理</p>
+ <div class="tag-plugin tabs" align="center"id="tab_1"><div class="nav-tabs"><div class="tab active"><a href="#tab_1-1">step 1</a></div><div class="tab"><a href="#tab_1-2">step 2</a></div><div class="tab"><a href="#tab_1-3">step 3</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_1-1"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251727577.PNG" style="width:300px;"/></div></div></div><div class="tab-pane" id="tab_1-2"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251728376.PNG" style="width:300px;"/></div></div></div><div class="tab-pane" id="tab_1-3"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251728401.PNG" style="width:300px;"/></div></div></div></div></div>
+
+
+<p>服务器地址为你的电脑的IP地址，端口号就是刚才在Fiddler中设置的端口号了</p>
+<p>Mac可以直接打开网络偏好设置查看</p>
+<p>windos可以cmd输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>正式开始抓包</p>
+<p>这时候如果你刷新网页的话，Fiddler中会出现大量请求，所以需要关掉可能会出现网络请求的程序。然后打开手机app</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251729800.png"/></div></div>
+
+<p>这时候就需要你仔细寻找了，发现了公司的服务器IP请求，然后看一下请求相应的数据。</p>
+<p>没错，就是这个了。话说食堂的糖醋里脊真的不怎么样</p>
+<p>然后因为请求确实太多，添加一个过滤条件过滤一下</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251729810.png"/></div></div>
+
+<p>直接使用请求头中Host作为条件即可</p>
+</li>
+<li><p>现在就获取到了需要的请求接口和Header以及负载的Body数据</p>
+</li>
+</ol>
+<h3 id="②-编写程序"><a href="#②-编写程序" class="headerlink" title="② 编写程序"></a>② 编写程序</h3><p>由于这个程序写出来就只为了给我自己订餐，所以在编写过程中很多地方都是硬编码</p>
+<p>发送请求我使用的是<code>hutool</code>工具包中封装好的<code>HttpRequest</code>类</p>
+<p>具体代码我就不贴了，因为涉及公司的IP地址，及app的接口等</p>
+<p>不过定时任务的代码可以贴一下</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderController</span> &#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    HttpRequestService service;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ThreadPoolTaskScheduler threadPoolTaskScheduler;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> ScheduledFuture&lt;?&gt; future;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> ThreadPoolTaskScheduler <span class="title function_">threadPoolTaskScheduler</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ThreadPoolTaskScheduler</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;cron.prod&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String cron;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/start&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">start</span><span class="params">()</span> &#123;</span><br><span class="line">        future = threadPoolTaskScheduler.schedule(<span class="keyword">new</span> <span class="title class_">MyRunnable</span>(service), <span class="keyword">new</span> <span class="title class_">CronTrigger</span>(cron));</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;startTask&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/stop&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">stop</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (future != <span class="literal">null</span>) &#123;</span><br><span class="line">            future.cancel(<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;stopTask&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>主要是写了两个接口用来控制定时任务的开启和关闭</p>
+<p>然后在本机调试</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251729686.png"/></div></div>
+
+
+
+<h3 id="③-服务器运行"><a href="#③-服务器运行" class="headerlink" title="③ 服务器运行"></a>③ 服务器运行</h3><p>想要实现在十二点订餐肯定不能只让程序运行在本机电脑上，否则你的电脑需要整晚开机，或者你可以设置定时关机。但这也太麻烦了，而且订个餐还需要占用办公电脑，这显然是不现实的。所以需要把jar包扔到服务器上运行</p>
+<p>因为创建的项目是<code>SpringBoot</code>项目，因此可以直接打Jar运行，方便很多</p>
+<p>你可以传统的在本地把Jar包打包好，然后上传服务器，<code>Java -Jar</code> 运行</p>
+<p>不过我选择第二种方式，直接使用一个idea上阿里的插件一键部署</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251730727.png"/></div></div>
+
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251730509.png"/></div></div>
+
+<p>从上到下依次是</p>
+<ul>
+<li><p>文件获取方式，也就是你的项目最终编译完成后的文件：</p>
+<ul>
+<li>你可以选择<code>maven</code>构建后生成的文件，这时你需要输入maven具体的构建命令，一般就是<code>clean install</code></li>
+<li>手动指定上传的文件</li>
+<li>Gradle打包，当前是个maven项目，因此不可使用</li>
+</ul>
+</li>
+<li><p>选择你要上传的服务器实例</p>
+</li>
+<li><p>上传到哪个路径下</p>
+</li>
+<li><p>上传完成后需要执行的命令</p>
+<p>关于这个需要说一下，因为我的项目是个jar包，直接使用<code>Java -jar</code>运行的话，直接关掉命令行面板就会停止运行，所以需要设置后台运行的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">nohup</span> java -jar xxx.jar &gt; log.txt &amp;</span><br></pre></td></tr></table></figure>
+
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251730558.png"/></div></div></li>
+</ul>
+<p>到这还需要你进入阿里云的控制台，找到你的服务器实例，打开这个项目所在端口的访问权限</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/fengqianliuli/img/picgo_upload/202310251731021.png"/></div></div>
+
+<p>最后，访问你的服务器打开定时任务就完成了</p>
+<h2 id="4、作戰結束"><a href="#4、作戰結束" class="headerlink" title="4、作戰結束"></a>4、作戰結束</h2><p>干饭人大获全胜！🎉🎉🎉🎉</p>
+
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2020/05/16/%E4%BD%BF%E7%94%A8Glide%E5%9C%A8Android%E5%BA%94%E7%94%A8%E4%B8%AD%E5%8A%A0%E8%BD%BD%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87/">使用Glide在Android应用中加载网络图片</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="fengqianliuli/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="master"></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"codeblock":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+      loadBeaudar();
+  });
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
